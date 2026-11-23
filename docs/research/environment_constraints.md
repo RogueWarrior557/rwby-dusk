@@ -21,8 +21,9 @@ asset production, and what can be honestly verified.
 |---|---|---|
 | `registry.npmjs.org` | 200, allowed | npm packages installable |
 | `pypi.org` | 200, allowed | pip packages installable |
-| `api.github.com`, `github.com/.../releases` | 403, blocked by policy | Godot binaries (hosted on GitHub releases) cannot be downloaded without an environment change |
-| `godotengine.org`, `downloads.godotengine.org` | no connection, blocked | same |
+| `api.github.com`, `github.com/<repo>` web pages | 403, blocked by policy | GitHub web UI and API not reachable with curl |
+| `github.com/godotengine/godot/releases/download/4.7.2-stable/...zip` (direct asset URL) | **200**: redirects to `release-assets.githubusercontent.com` and is allowed | **Godot binaries can be downloaded** (header-only check 2026-11-23; corrects an earlier probe of the release *page*) |
+| `godotengine.org`, `downloads.godotengine.org` | no connection, blocked | use the GitHub release asset URL instead |
 | `dl.google.com` (Android SDK repository) | no connection, blocked | Android SDK command-line tools cannot be fetched without an environment change |
 | `maven.google.com`, `services.gradle.org`, `repo.maven.apache.org` | 200, allowed | Gradle/Android build dependencies resolvable once an SDK exists |
 
@@ -30,9 +31,10 @@ asset production, and what can be honestly verified.
 * **Asset production:** sprites are authored as text grids and compiled with
   `tools/pixelforge` (Python and Pillow). This works today, and a first
   feasibility spike is in `docs/research/art_spike/`.
-* **Godot:** usable here only if the user approves allowing the Godot
-  download host(s) for this environment, or provides the binary another way.
-  Once present, Godot runs headless for tests, imports and web exports.
+* **Godot:** the official Linux binary can be fetched from its GitHub
+  release-asset URL. Running a downloaded binary may need the user's
+  permission in this session. Once present, Godot runs headless for tests,
+  imports and web exports. Not yet executed here, so this is unverified.
 * **Unity:** not practical in this container (large editor download from
   blocked hosts, licence activation, no GPU).
 * **Web stack (TypeScript + a 2D WebGL renderer + Capacitor):** fully
