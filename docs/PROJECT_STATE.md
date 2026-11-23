@@ -5,9 +5,16 @@ exists, what was decided, what is pending, and what to do next. Update it
 at every milestone.
 
 ## Current phase
-**Pre-production: research complete, concept proposal awaiting approval.**
-No game code exists yet, by design: the brief requires approval of the
-concept, narrative premise and combat direction before implementation.
+**Pre-production: concept approved (Hushlight); narrative direction in
+review.** No game code exists yet.
+* **Art is ON HOLD** at the user's request (2026-11-23: "you can't make any
+  images or art for the game for the time being"). Do not produce artwork
+  until the user lifts this.
+* The user wants official art to be **based on real references** (King
+  God Castle and similar games). Image hosts are blocked in this
+  environment, and a proposed network change was declined. Next time art
+  resumes, get references first (the user supplies images, or approves
+  network access) before drawing anything.
 
 ## Repository
 * A standalone git repo with its own history (no shared ancestry with the
@@ -28,6 +35,9 @@ concept, narrative premise and combat direction before implementation.
 | Sprite tooling | `tools/pixelforge/pixelforge.py`, `tools/pixelforge/ramps.py` | Text-grid sprite compiler; OKLCH hue-shifted ramp builder |
 | Art feasibility spike | `docs/research/art_spike/` | 32×32 knight, portrait readability mock, lighting test, 8-hero silhouette test |
 | Concept proposal | `docs/design/00_concept_proposal.md` | Three concepts, scoring, recommendation (**Hushlight**), world, narrative premise, combat foundation, tech stack, roadmap |
+| Narrative bible v2 | `docs/design/01_narrative_bible.md` | World truth layers, rules of light, timeline, 12-chapter plot, choices map, burn-a-memory, foreshadowing ladder, endings, 24 hero design facts, symmetric bond map (28 pairs) |
+| Story review packet | `docs/design/03_story_review.md` | One-page story, chapter summaries, all 24 heroes' personal stories, antagonists' stories, open questions for the user |
+| Art tools (paused) | `tools/artrender/` (render.js, composite.py, inkkit.py), `art/official/maren_vey/` | SVG→PNG renderer with layer isolation; compositing (rim light, bloom, shafts, motes, grading, grain); tapered strokes and auto cel-shading. Maren draft v3 is **not** final and was made without references. |
 
 ## Decisions made so far
 | Decision | Status | Rationale |
@@ -35,11 +45,17 @@ concept, narrative premise and combat direction before implementation.
 | Standalone repo, pushed to the session branch | Done | The user asked for a new repo; this session can't create GitHub repos |
 | Sprites authored as text grids, compiled by pixelforge | Adopted for spikes | No artist or image model available; tested feasible at 32 px |
 | 32×32 unit canvas, 270 px portrait logical width, integer scaling | Proposed | Research recommendation plus our own readability test |
-| Concept: Hushlight | **Pending user approval** | See proposal §4 |
+| Concept: Hushlight | **Approved** by the user ("Exactly") | See proposal §4 |
+| Official art style: mostly cartoon, semi-realistic undertones, mood carried by faces | Direction given by the user; production on hold | Must be grounded in references |
+| Maren is hero #1 of 24 (Hearth commander) | Adopted | Narrative bible §14 |
 | Engine: Godot 4.7.x + GDScript | **Pending user approval** | See proposal §8.3 |
 
 ## Pending user decisions
-See `docs/design/00_concept_proposal.md` §9.
+* Story review questions in `docs/design/03_story_review.md` §6: Tobin's
+  unrestored path, Ansel's redemption, keeping all four endings, the defined
+  protagonist, and the tone level.
+* Still open from the proposal (§9): business model; engine (Godot) and
+  permission to download and run its binary; trademark check on the title.
 
 ## Next steps after approval (M1, technical foundation)
 1. Download and verify the Godot 4.7.x Linux binary headless (needs the
