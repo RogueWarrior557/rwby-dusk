@@ -403,6 +403,15 @@ faceless, saying *"Sister."*
 
 ## 6. Hushlight — combat foundation
 
+> **Revision (2026-11-23, after user review):** Maren is now a
+> **deployable frontline hero** (the strongest unit, always fielded as
+> Captain). Her First Lantern is a moving light source, and her
+> player-triggered ultimate is *Last Ember*. The fixed base object
+> formerly called the "Hearth lantern" is now **the Beacon**, still the
+> run's health. Elsewhere in this document, read "Hearth" as "Beacon" and
+> "Maren's Rites" as "Maren's ultimate plus one Beacon Rite (*Flare*)".
+> See `04_power_system.md` §9.3.
+
 ### 6.1 Board and orientation
 * **Portrait**, to match the genre's familiar one-handed play, and the
   vertical theme of darkness descending toward your light **[R]**.

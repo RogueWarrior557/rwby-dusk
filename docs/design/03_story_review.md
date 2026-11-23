@@ -2,7 +2,11 @@
 
 A review copy of the story and every character's own story, written to read
 comfortably on a phone. The full reference (world rules, timeline, choices
-map, foreshadowing) is in `01_narrative_bible.md`.
+map, foreshadowing) is in `01_narrative_bible.md`. **How magic works** (the
+Lumen Arts) and **Maren's powers** are in `04_power_system.md`.
+
+*Updated after your review:* the world now has a full magic system, and
+Maren is rebuilt as the strongest fighter in the game.
 
 **Contents**
 1. The story in one page
@@ -24,12 +28,30 @@ memories of the dead. People and places that no one remembers anymore
 become **the Unremembered**: grey, hungry shapes that want only their
 names.
 
-**The heroine.** **Maren Vey** is a Lamplighter, a road warden who carries
-an Old Lantern that can burn only *her own* memories. She has burned so
-much in service that she doesn't remember her mother's face. She doesn't
-know that six years ago she burned the last memory of her little brother,
-**Tobin**, to keep her lantern lit, and that doing so erased him from the
-world.
+**The magic.** All power is **lumen**, the light of remembrance. People draw
+it from five sources:
+* their own memories;
+* fallen sunlight crystals (**Vigilglass**);
+* nine living sun-coals guarded by the Ember-folk (**Sunseed**);
+* being remembered by others (**Renown**);
+* the dark itself (**Hushcraft**), which slowly makes the world forget you.
+
+Seven Arts shape lumen: burning, oath-holding, healing by telling, lens
+focusing, story-fire, shadow, and artifice. An eighth, **Naming**, is
+legendary and lost.
+
+**The heroine.** **Maren Vey, the Greywater Flame**, is the Order of
+Lamplighters' youngest Captain in ninety years and a living legend:
+* She is **Wick-born**, a once-a-century gift. One memory of hers can light
+  a city.
+* She carries the **First Lantern**, a founder's relic and the only key to
+  the Church's Sun-Altar.
+* She fights at the front with its hooked pole as a glaive.
+* At 18 she held a causeway **alone, all night**, against the dark, and saved
+  300 people.
+
+She doesn't know what that light cost: she burned her little brother
+**Tobin** out of existence to make it.
 
 **The secret.** Burning memory doesn't just empty a mind; it unravels the
 world. Three hundred years ago, a king of the bell-city of **Myrr** forced
@@ -91,9 +113,10 @@ always travelled alone.
 7. **The Quiet Road.** At a parley in the dark, Ansel tells Maren the truth:
    *you burned your brother.* She can't remember him. Bram can, faintly.
    Ansel's own guardian defects. Vesper faces a betrayal order.
-8. **The Longest Night.** The Kindling procession on the Great Bridge. Pim
-   must choose between the law and their parents; Nox, between her father's
-   offer and her friends. A partial Kindling causes a **False Dawn**: a week
+8. **The Longest Night.** The Kindling procession on the Great Bridge. The
+   High Witness makes Maren an offer: *give yourself to the Altar and I'll
+   spare all 30,000.* Pim must choose between the law and their parents;
+   Nox, between her father's offer and her friends. A partial Kindling causes a **False Dawn**: a week
    of sunlight, then a faster fall. **One winter left.** In the dark, bells
    ring from a city no one remembers.
 
@@ -103,7 +126,9 @@ always travelled alone.
 10. **The Bell-City.** Myrr, forgotten for 312 years, where one woman has
     rung a bell for every forgotten soldier. The truth of the Unmourning
     comes out. The knight's name is restored: **Aldous Wick**, founder of the
-    Order, erased by his own brothers.
+    Order, erased by his own brothers. Maren learns her lantern holds the
+    lens of the machine that destroyed Myrr, and **awakens Naming**: the
+    power to restore the forgotten and make light without burning.
 11. **The Witness.** The "god" is everyone who has ever died, starving
     because the living burn instead of mourning. If enough of Maren
     remains, the company restores **Tobin**. If not, she must lay to rest a
@@ -121,27 +146,52 @@ can end.**
 
 ---
 
-### 1. Maren Vey: *the Lamplighter who forgot what she gave*
-*Commander · Order of Lamplighters · 24*
-* **Before.** Born in Greywater. Her mother drowned in a dark tide on the
-  ferry when Maren was nine. Her father sold his memories until he forgot
-  his children, and walked away. Maren raised her brother Tobin alone,
-  then apprenticed to the famous Lamplighter Ansel Marrow at 16. On the
-  Night of the Long Tide, Ansel, nearly empty, put his lantern in her
-  hands. To keep it lit she burned her last memories of Tobin, and Tobin
-  vanished from the world. Ansel walked into the dark after him. Days
-  later she gave the memory of *choosing* to a confessor so she could
-  sleep. Now she remembers only "a bad night" and a mentor who died.
-* **During.** In Act I she believes in the job: burn your own, never
-  anyone else's. Act II takes that apart. Her burning created the Quiet,
-  and the brother she can't picture is walking with her enemy. In Act III
-  she chooses what to carry instead of what to burn.
-* **Key scene.** Chapter 7, at the parley. Ansel describes Tobin's laugh,
-  and Maren realises she is crying for someone she cannot remember.
+### 1. Maren Vey: *the Greywater Flame*
+*Lamplighter-Captain · Order of Lamplighters · 24 · Wick-born · bearer of the First Lantern*
+* **Before.** Born in Greywater. Her mother drowned in a dark tide when
+  Maren was nine; her father sold his memories until he forgot his
+  children. Maren raised her brother Tobin alone. At 16, the legendary
+  Lamplighter Ansel Marrow took her as his apprentice, because he could see
+  what she was: **Wick-born**, a once-a-century soul whose memories burn like
+  bonfires. On the Night of the Long Tide, Ansel, nearly empty, gave her the
+  **First Lantern**, the founders' relic, which only a Wick-born can hold.
+  To keep it lit she burned her last memories of Tobin. That single burning
+  blazed so bright she **held the Greywater causeway alone, all night**, and
+  saved more than 300 travellers. The Order made her its **youngest Captain
+  in ninety years**, and ferry towns sing her ballad. Nobody remembers the
+  boy. She gave the memory of *choosing* to a confessor so she could sleep.
+* **Who she is.** Bold, wry, commanding: the first into the dark, every
+  time. Proud of a legend she doesn't understand. She treats burning as her
+  right ("they're *my* memories") and keeps everyone at arm's length because
+  she has no past to share.
+* **Her power.**
+  * She fights at the front with the **lantern-glaive**, sweeping arcs of
+    burning light. Her lantern is a moving light that the whole squad
+    orbits.
+  * Her ultimate, **Last Ember**, burns a memory for a battlefield-clearing
+    detonation.
+  * She grows down one of two paths, shaped by the player's story choices:
+    the **Ember Path** (burn, and become devastating) or the **Remembrance
+    Path** (keep, and strengthen everyone around her).
+  * In Act III she becomes the **first Namer in 312 years**: she can restore
+    the forgotten and make light without fuel.
+* **During.**
+  * **Act I:** every faction starts circling her lantern, the only key to
+    the Church's Sun-Altar.
+  * **Act II:** her legend unravels. Her burning created the Quiet, and the
+    High Witness offers to spare 30,000 people if Maren burns *herself* on
+    the Altar instead.
+  * **Act III:** she learns her lantern is built from the lens of the
+    machine that erased Myrr. The power that destroyed a city is inside her,
+    and she must decide whether anyone should hold it.
+* **Key scene.** Chapter 11. Holding Bram's memory of a face, Tamsin's kept
+  confession and six years of ash, Maren speaks a name she has never known,
+  *Tobin*, and her brother walks out of the grey.
 * **Endings.** She restores her brother and teaches the Reach to grieve
-  (Long Telling). She sits beside Ansel as the lights go out (Silence). She
-  becomes the city's hero and hates herself (Kindling). Or she burns her
-  own name to become the world's memory (Lantern-Bearer).
+  (Long Telling). She sits beside Ansel as the lights go out (Silence).
+  She becomes the city's hero and hates herself (Kindling). She burns
+  herself on the Altar to spare 30,000 (the Offering). Or she burns her own
+  name to become the world's memory (Lantern-Bearer).
 
 ### 2. Bram Ostrow: *the man who cannot forget*
 *Vanguard · former House guard · 44*
@@ -170,7 +220,10 @@ can end.**
   the Ninth Fire's **Telling**, the clan's sacred spoken history. Sefa
   recited it into a broker's bottle as memory, and Taya lived. The bottle
   was burned in some rich man's lamp, and the clan's tellers began
-  forgetting verses. Chief Ruun exiled her.
+  forgetting verses. Chief Ruun exiled her. On her way out she stole a
+  **spark of the Ninth Fire's Sunseed** and hid it in her braid beads. It
+  powers her **Storyfire** arrows, and it is a second crime she has told
+  no one about.
 * **During.** In Act I she refuses to stand in lantern-light and mocks the
   memory trade, from guilt. In Act II Ruun and the elder Kesh arrive in
   Candlemere because the tellers keep losing verses, and Sefa confesses
@@ -354,7 +407,9 @@ can end.**
   furnaces. He was there with Bram the night of the vat rupture. His wife
   **Mira** sold her memories of their marriage to pay their debts and no
   longer knows him. He became the Moth to rob memory vaults and return what
-  was stolen.
+  was stolen. His secret: to fight, he **drinks** stolen recall
+  (*Draughting*, a forbidden art). It gives him bursts of strength and
+  leaves him living strangers' memories for hours.
 * **During.** In Act I he is Candlemere's folk hero, chased by Pim. In Act II
   he finally steals back Mira's memories in the Chapter 5 heist. She
   drinks them, and their marriage feels to her like a stranger's story,
@@ -502,7 +557,9 @@ can end.**
 ### 24. Tobin Vey: *the boy without a name*
 *Blade · Unremembered · forgotten at 15*
 * **Before.** Maren's little brother: funny, fearless, always carrying a tin
-  toy lantern so he could "be a Lamplighter too". On the Night of the Long
+  toy lantern so he could "be a Lamplighter too". Nobody ever knew he was
+  **Wick-born** like his sister. His memory burned so bright it held a
+  causeway all night. On the Night of the Long
   Tide his sister burned her last memories of him to survive, and he faded
   out of the world. Ansel followed him into the dark and has protected him
   among the Unremembered ever since.
@@ -598,3 +655,9 @@ can end.**
 5. **Tone check.** Pim's parents, Cass's wife and Vesper's lost love make
    memory loss painful on purpose. Is this the right level of darkness,
    given that the art will stay mostly cartoon?
+6. **Maren's power level.** She is now the strongest unit at launch, always
+   fielded, with a legendary weapon and an Act III awakening. Is that the
+   "face of the game" level you want, or should she be stronger still (for
+   example, the Naming awakening earlier, in Act II)?
+7. **The Offering ending.** A new variant where Maren accepts the High
+   Witness's offer and burns herself to spare 30,000. Keep it?

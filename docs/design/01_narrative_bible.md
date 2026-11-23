@@ -5,9 +5,18 @@
 live in `00_concept_proposal.md`; later system documents take precedence
 on rules.
 
-**Companion document:** `03_story_review.md` holds the one-page story
-summary and **each character's personal story in full**. This bible holds
-the world, plot structure, choices and design facts.
+**Companion documents:**
+* `03_story_review.md` holds the one-page story summary and **each
+  character's personal story in full**.
+* `04_power_system.md` holds **the Lumen Arts**: five sources of power,
+  seven Arts plus the lost art of Naming, rare gifts, legendary artifacts,
+  and Maren's powers.
+
+This bible holds the world, plot structure, choices and design facts.
+
+**v2.1 (same day):** added the power system, and rebuilt Maren as a
+Wick-born frontline Captain who bears the First Lantern (see §4, §8, §12,
+§14).
 
 **Art note:** official artwork is on hold at the user's request. The art
 direction stands (mostly cartoon with semi-realistic undertones; mood
@@ -72,8 +81,12 @@ survive, or carry its past and risk the dark?*
 | The Hush | Evil dark | Unmemory. Not malicious: it is what is left when nothing remembers. |
 
 ## 3. The rules of light (canonical)
-1. **True light** comes only from recall or from Vigilglass. Ordinary fire
-   frightens the weakest Unremembered and stops nothing.
+1. **True light** comes from three places only:
+   * recall (burned memory);
+   * Vigilglass (stored sunlight);
+   * the nine **Sunseed** coals (living sun-fire, Ember-folk only).
+   Ordinary fire frightens the weakest Unremembered and stops nothing. All
+   power is lumen; the full system is in `04_power_system.md`.
 2. **A burned memory is gone** from the one who held it.
 3. **The threshold of unremembering.** When the last strong memory of a
    person or place is burned, its hold on the world fails. It becomes
@@ -101,7 +114,7 @@ survive, or carry its past and risk the dark?*
 | −3 to 0 | **The Bell War.** Myrr wins at the cost of 40,000 dead, and blood-feuds spread through the city. |
 | **0** | **The Unmourning.** King Oswy uses his Lethe engine to erase the war-dead from every living mind "so the city can heal". The Witness is wounded and the Vigil falters. **The Long Night of Orra** (40 days) follows. Myrr itself falls below the threshold and is forgotten. Only Oswy's daughter **Ilka**, who refused the Unmourning, remains to ring the bells. |
 | 22 | **Idony Vash** finds Oswy's notes and invents recall. True light returns, and she is canonised. |
-| 41 | **The Order of Lamplighters** is founded by Idony's apprentices and the knight **Aldous Wick**: "burn only what is yours". |
+| 41 | **The Order of Lamplighters** is founded by Idony's apprentices and the knight **Aldous Wick**: "burn only what is yours". Wick and Idony forge **the First Lantern** from Myrr's bell-bronze and the lens of Oswy's Lethe Engine. It is passed secretly from bearer to bearer ever since. |
 | 48 | Wick finds Myrr's records and warns that recall is a small Unmourning. Fearing panic, the Order **burns his name** (the Wick Purge). History records "Seven Apprentices"; he was the eighth. |
 | 51 | Idony writes her **final testament** ("the light is borrowed") and dies. The Church seals it. |
 | 103 | The **Lantern Houses** form around the distilleries. |
@@ -112,7 +125,7 @@ survive, or carry its past and risk the dark?*
 | 288 | **Maren Vey** born at Greywater; **Tobin** born 291. |
 | 297 | Their mother drowns in a Hush-tide on the ferry. Their father sells so much memory that he forgets his children and wanders off. Maren, 9, raises Tobin. |
 | 304 | Maren (16) is apprenticed to **Ansel**; Tobin travels with them. **Noemi Tallis** (14) sells every memory of her father and vanishes. |
-| **306** | **The Night of the Long Tide** (on the Greywater causeway). Ansel is nearly empty and gives Maren his lantern. She burns her last memories of Tobin to keep it lit. Tobin crosses the threshold and becomes Unremembered. Ansel walks into the dark after the fading boy and is presumed dead. Days later Maren confesses to a travelling confessor, **Brother Tamsin**, and gives him the memory of *choosing*. She no longer knows there was a choice. |
+| **306** | **The Night of the Long Tide** (on the Greywater causeway). Ansel is nearly empty. Knowing Maren is **Wick-born**, he gives her the **First Lantern**: only a Wick-born can hold its full flame. She burns her last memories of Tobin to keep it lit, and that single burning blazes so bright she **holds the causeway alone all night**, saving more than 300 travellers. Tobin crosses the threshold and becomes Unremembered. Ansel walks into the dark after the fading boy and is presumed dead. The Order names Maren its **youngest Lantern-Captain in ninety years**, and ballads call her **"the Greywater Flame"**. Days later she confesses to a travelling confessor, **Brother Tamsin**, and gives him the memory of *choosing*. She no longer knows there was a choice. |
 | 306–312 | Ansel, living with the Unremembered, founds **the Quiet**. Tobin walks beside him. |
 | 309 | A vat rupture at the Tallis distillery in Candlemere births **the Residue**, a creature of burned memory. Bram (guard) and Cass (stoker) witness it. Otto's paper on the acceleration is rejected by the Observatory College. |
 | 310 | Hester refuses to falsify House Tallis ledgers (child memory purchases) and is disgraced. Aurelie recruits Isolde. Bram flees Tallis. |
@@ -164,8 +177,10 @@ Each chapter is 5–8 Nights (battles) plus Vigil scenes, and takes 60–90
 minutes on mobile.
 
 ### Prologue: "The Last Ferry"
-Maren escorts a lantern caravan across the Greywater causeway as a
-Hush-tide arrives early (tutorial). She burns a small memory, a breakfast,
+**Lantern-Captain Maren Vey, the Greywater Flame**, escorts a lantern
+caravan across the causeway where her legend was born, as a Hush-tide
+arrives early (tutorial). The caravan's drivers sing her ballad until she
+tells them to stop. She burns a small memory, a breakfast,
 to finish the Night: the cost shown at no real stake. **Plant:** the
 caravan ledger lists *"Lamplighter Vey and one minor"* from six years ago.
 Maren has always travelled alone. She shrugs it off as a clerk's error.
@@ -176,8 +191,9 @@ Maren has always travelled alone. She shrugs it off as a clerk's error.
 * **Goal:** relight Greywater's beacon before the Hush-tide.
 * **Synopsis.** Greywater sold its own history for oil a generation ago,
   and the town is fading. Maren finds:
-  * **Bram**, hiding from Tallis hunters, who says *"You came through here
-    six years ago. With a boy."*;
+  * **Bram**, hiding from Tallis hunters (who also want Maren's First
+    Lantern), who says *"You came through here six years ago. With a
+    boy."*;
   * **Sefa**, who refuses to stand in lantern-light;
   * **Brother Tamsin**, carrying a Church writ to seize the recall stores,
     who frowns as if he has met Maren before;
@@ -249,8 +265,9 @@ Maren has always travelled alone. She shrugs it off as a clerk's error.
   attacks the **Lighthouse Spire**, which burns condemned prisoners'
   memories. Its guardian **Kasimir** holds the gate. Its leader is
   unmasked: **Ansel Marrow**, alive. **Isolde betrays** the company,
-  handing Otto's data and Tamsin's heresy to Aurelie, and Tamsin is
-  arrested.
+  handing Aurelie Otto's data, Tamsin's heresy and her measurements of the
+  First Lantern. **Aurelie now knows Maren is Wick-born, and that the
+  First Lantern is the key to the Sun-Altar.** Tamsin is arrested.
 * **Boss: Kasimir, the Unlit Wall** (at the Spire gate).
 * **Choice (Burn #2):**
   * **Defend** the Spire: burn a memory to power Last Ember. The city stays
@@ -337,6 +354,10 @@ Maren has always travelled alone. She shrugs it off as a clerk's error.
   * The battle runs along the Great Bridge against the Church's
     **Reliquary Engine**.
   * **Silas** destroys his still to cut the Church's recall supply.
+* **Aurelie's offer.** On the bridge, the High Witness speaks to Maren
+  alone: *"You alone could fuel the Kindling. Give yourself to the Altar
+  and I will spare all 30,000."* Maren cannot answer yet; the Altar is in
+  Aurel. The offer returns as a final choice in Ch 12.
 * **Choice (Burn #4) and side choices:**
   * Burn a memory to break the procession's recall-chains (the gathered
     memories return to their owners). If not, Aurelie leaves with them.
@@ -375,6 +396,10 @@ Maren has always travelled alone. She shrugs it off as a clerk's error.
   * In the archive the company finds **Aldous Wick's** records. The
     Nameless Knight's name is spoken, and he is **restored**. Ines kneels
     to the founder her Order erased.
+  * Maren learns the First Lantern holds **the lens of the Lethe Engine**.
+    The art that destroyed Myrr has been in her hands for six years. Six
+    years of Tobin's wick-ash in that lens have marked her, and **Maren
+    awakens Naming**, the first Namer in 312 years.
   * Sefa finds the Ninth Fire's lost verses lying in the Hush like dropped
     beads.
 * **Boss: the Unmourned King.** Oswy's shade, commanding his forgotten
@@ -393,7 +418,8 @@ Maren has always travelled alone. She shrugs it off as a clerk's error.
     * **Ilka** rings a new bell;
     * the company tells his name.
 
-    Tobin walks out of the grey.
+    Holding all of it, **Maren speaks his true Name**, her first full
+    Naming. Tobin walks out of the grey.
   * If the conditions fail, Maren must face **the Boy Without a Name** as a
     boss, and lay him to rest without ever remembering him.
 * **Reveal:** Ansel kept one memory unburned: Maren and Tobin laughing on
@@ -469,7 +495,7 @@ The Archive logs each burn as a scorched page.
 | Ending | Requires | What happens |
 |---|---|---|
 | **The Long Telling** (hopeful, costly) | Tobin restored; refuse both the Kindling and the Silence; at least 3 of: Kesh, Tamsin, Bram, Wynn bonds high | The company and the gathered crowds tell the names of the dead. Pell's lamp lights without recall; Otto's mirrors carry the light; Ilka rings every bell. **Ansel gives his one kept memory** to the Telling, and Kesh tells him his childhood back. Recall is outlawed. The Vigil steadies, dim but holding. The world grieves again, and means it. |
-| **The Kindling** (dark) | Side with Aurelie | A century of daylight bought with the lower wards. The last frame is a broker's slate with new prices. |
+| **The Kindling** (dark) | Side with Aurelie | A century of daylight bought with the lower wards. The last frame is a broker's slate with new prices. **Variant, "The Offering":** Maren accepts Aurelie's offer and burns herself at the Altar instead. The 30,000 are spared and a False Dawn lasts a lifetime, but the Witness starves faster. Remembered as a saint, she is gone. |
 | **The Silence** (bittersweet) | Side with Ansel | The great lanterns go out. The Unremembered sleep, and so, slowly, does the world. Maren and Ansel sit by a dead lantern on the Greywater causeway. |
 | **The Lantern-Bearer** (hidden) | 4 or more total burns, choosing Burn #5 (her own name) | Maren burns the rest of herself and becomes a new heart for the Witness, remembering everyone. If Tobin was restored, he becomes her Teller. If not, Bram does. |
 
@@ -496,7 +522,7 @@ Affinities: **L** = Lightsworn, **E** = Edgewalker, **D** = Duskborn.
 
 | # | Hero | Role / Aff. | Joins | Look (silhouette hook) | Combat identity |
 |---|---|---|---|---|---|
-| 1 | Maren Vey | Lamplighter / n/a | Prologue | Hooked lantern-pole taller than her; road-blue coat and capelet; cropped auburn hair; jaw scar | Hearth commander; Rites *Flare*, *Beacon*, *Last Ember* |
+| 1 | Maren Vey | Lamplighter (Captain) / n/a | Prologue | The First Lantern on a hooked **lantern-glaive** taller than her; road-blue Captain's coat and capelet; cropped auburn hair; jaw scar | **Strongest unit at launch; always fielded.** Glaive arcs; her lantern is a moving light source (radius 2); *Wickflare* line reveal; player-triggered **Last Ember**; Ember and Remembrance progression paths; Act III **Naming** (see `04_power_system.md` §9) |
 | 2 | Bram Ostrow | Vanguard / L | Ch 1 | Huge frame; distillery vat-door tower shield | *Weight of Years* (holds a tile); *Vat-Door Bash* (shove) |
 | 3 | Sefa of the Ninth Fire | Marksman / E | Ch 1 | Recurve bow; long ember-bead braid | Fire arrows briefly reveal veiled enemies; strongest in dim |
 | 4 | Brother Tamsin Reed | Warden / L | Ch 1 | Bell robe; censer-lantern staff; round spectacles | *Mending*: takes allies' damage, converts it to shields |
