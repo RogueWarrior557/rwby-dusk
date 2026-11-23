@@ -26,7 +26,7 @@ concept, narrative premise and combat direction before implementation.
 | Synthesized research report | `docs/reports/Pixel tactics RPG design research.md` | Comparison matrix, transferable principles, limitations |
 | Environment constraints (verified) | `docs/research/environment_constraints.md` | Tooling and network facts |
 | Sprite tooling | `tools/pixelforge/pixelforge.py`, `tools/pixelforge/ramps.py` | Text-grid sprite compiler; OKLCH hue-shifted ramp builder |
-| Art feasibility spike | `docs/research/art_spike/` | 32×32 knight, portrait readability mock, lighting test |
+| Art feasibility spike | `docs/research/art_spike/` | 32×32 knight, portrait readability mock, lighting test, 8-hero silhouette test |
 | Concept proposal | `docs/design/00_concept_proposal.md` | Three concepts, scoring, recommendation (**Hushlight**), world, narrative premise, combat foundation, tech stack, roadmap |
 
 ## Decisions made so far

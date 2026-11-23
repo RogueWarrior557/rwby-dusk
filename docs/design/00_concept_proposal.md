@@ -17,8 +17,9 @@ from evidence, not facts.
 
 ### 1.1 What makes King God Castle engaging (and what it gets wrong)
 King God Castle (AWESOMEPIECE, iOS/Android, October 2020, still updated in
-November 2026 with Season 75 and a 2026 story mode) is a portrait
-"merge + tower-defence + auto-chess" hybrid **[R]**. As far as the
+November 2026 with Season 75 and a 2026 story mode) is a "merge +
+tower-defence + auto-chess" hybrid **[R]**. Its screen orientation, grid
+size and sprite sizes could not be verified from the sources available. As far as the
 snippet-level evidence shows, its appeal rests on six things:
 
 | Strength | Why it works | Evidence |
@@ -75,6 +76,9 @@ relationship progress; steep early difficulty on mobile; walls of story
 text.
 
 ### 1.3 Constraints we verified ourselves [T]
+* **Eight proposed heroes are distinguishable by silhouette alone** at
+  32×32, with one near-collision to fix
+  (`docs/research/art_spike/silhouettes/`).
 * Code-authored pixel art can reach a credible standard at 32×32, but
   only with mandatory rendered-preview review passes
   (`docs/research/art_spike/`).
@@ -205,6 +209,9 @@ judgements, but each is argued from the evidence above.
   does **not** take animated water or path mutation.
 
 **Its biggest risks, and the plan for each:**
+* **Thematic overlap.** King God Castle's 2026 rebrand is "Luminous
+  Fate". Our light theme is mechanical and setting-level, not branding,
+  but we avoid "luminous" naming and any king, castle or god framing.
 * **Darkness could become a pure penalty.** Shadow-affinity heroes,
   enemies that are weaker in dark, and bargains that *spend* light make
   darkness a resource as well.
@@ -423,7 +430,10 @@ faceless, saying *"Sister."*
      2 rerolls.
 2. **Night** (auto combat): heroes act on their own AI. Lanterns burn
    down. The player spends **Resolve**, earned when enemies die in light,
-   on **Lantern Rites**:
+   on **Lantern Rites**. The research rates in-combat player actions as
+   "prototype only", because they risk micro and lockdown stacking
+   **[R]**. Rites are therefore prototyped in M2 and kept only if they add
+   decisions without demanding attention:
    * *Flare:* every lantern +1 radius for 5 s.
    * *Beacon:* move one lantern instantly.
    * *Last Ember:* a huge burst of light, at a cost to the Hearth's
@@ -461,6 +471,19 @@ faceless, saying *"Sister."*
   * *Pale:* slow enemies.
   * *Verdant:* heal heroes.
   * *Azure:* wider reveal, no bonus.
+
+**Positional drivers.** The research warns that with fewer than two,
+players converge on one optimal layout **[R]**. Hushlight has three:
+1. light geometry;
+2. Kindred adjacency;
+3. **displacement**: some heroes shove (Bram's shield-bash pushes an enemy
+   back into the dark), and some enemies drag (*Hush-hands* pull a hero out
+   of the light), in the spirit of Into the Breach.
+
+**What is shown before the fight.** The Night Chart previews each enemy's
+first target, its area tiles and any backline divers. Units show visible
+counters (Momentum pips, skill countdown, a lantern's oil), so no rule
+needs a wiki.
 
 **Decisions this creates [D]:**
 * Light the backline casters, or push light forward so marksmen can see?
@@ -583,6 +606,16 @@ faceless, saying *"Sister."*
 * **VFX:** palette ramps ending in white, 4–8 frames, no alpha fades
   (step down the ramp or dither dissolve), particles snapped to the pixel
   grid.
+* **Escalation vocabulary** (our own words, used consistently across
+  systems; the research advises one shared ladder but not King God
+  Castle's King/God tiers **[R]**). Hero ranks: **Spark → Flame → Blaze →
+  Beacon**. Enemy grades: **Faded → Lost → Forsaken → Nameless**.
+* **Touch versus pixel grid:** a 32 px tile at 4× is about 43 pt on
+  1170-wide iPhones, just under Apple's 44 pt target **[R]**. Fixes:
+  * hit areas larger than the tile;
+  * the dragged unit lifts above the finger;
+  * snap-to-cell with a light and bond preview before release;
+  * a tap-to-select, tap-to-place alternative.
 * **UI:** brass and vellum, 9-slice pixel panels. A bitmap font for
   numbers and labels. Long-form text in a high-legibility font rendered at
   native resolution (for localisation and accessibility).
@@ -679,4 +712,5 @@ devices and machines outside it.
   M2); Godot's mobile in-app purchase and cloud-save maturity (a spike
   planned in M1).
 * **Verified first-hand [T]:** 32 px code-authored sprites, board fit,
-  lighting readability, and container tooling and network facts.
+  lighting readability, silhouette distinctness of 8 heroes, and container
+  tooling and network facts.

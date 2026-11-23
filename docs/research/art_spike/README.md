@@ -67,3 +67,33 @@ meaning?
    tileset needs 3–4 variants plus decals. The dark level may need tuning per
    environment. Units standing in dim light should get a subtle readability
    rim so they never sink into the floor.
+
+## Silhouette test (`silhouettes/`)
+**Question** (raised by the research report): is class and character
+distinctness achievable at 32×32? Board fit was proven by the readability
+mock; distinctness was not.
+
+| File | What it is |
+|---|---|
+| `silhouettes.py` | 8 proposed Hushlight heroes authored as filled spans, facing right, feet on row 29 |
+| `silhouette_sheet_x6.png`, `silhouette_sheet_1x.png` | Single-colour silhouette sheet |
+
+Order: Bram (tower shield), Sefa (bow, braid), Tamsin (bell robe, censer
+staff), Nox (crouch, scarf, twin daggers), Isolde (coat, ring-lens staff),
+Pell (lantern backpack), the Nameless Knight (single horn, greatsword,
+tattered cloak), Hester (stovepipe hat, quill-spear).
+
+**Findings (from inspecting the output):**
+1. **All 8 identify from shape alone.** Each owns a unique primary shape:
+   shield block, bow arc, bell cone, low crouch, ring, backpack mass,
+   horn plus diagonal blade, top hat.
+2. **Near-collision: Tamsin and Hester.** Both read as a flared skirt with
+   a vertical staff on the right, separated only by headgear. Fix before
+   production: narrow Hester's skirt and make the ledger a prominent block,
+   or give Tamsin's staff a wider lantern.
+3. **1 px diagonal props** (bow, greatsword, quill) are near the limit of
+   readability. In colour they need an outline, or a 2 px core where they
+   carry identity.
+4. **Rule adopted for the style guide:** every hero needs one primary shape
+   no other hero shares, and the silhouette sheet is re-run whenever a hero
+   is added.
