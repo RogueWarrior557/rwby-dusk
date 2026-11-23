@@ -38,3 +38,32 @@ palette (`palettes/spike.json`) is provisional.
    horizontal bar, and the knight alone is not a distinctive design.
    Distinctive silhouettes (unusual headgear, weapons and body shapes) must
    be a design requirement for every hero.
+
+## Lighting test (`light_test/`)
+**Question:** can a light/dark board read clearly in pixel art without
+alpha gradients or runtime blending, so that light can carry gameplay
+meaning?
+
+| File | What it is |
+|---|---|
+| `floor.pxs`, `lantern.pxs` | Hand-authored 16×16 flagstone tile and 16×32 lantern post with a 2-frame flicker (palette `palettes/env.json`) |
+| `light_mock.py` | Mock renderer, not engine code. Each colour has 4 precomputed light variants (dark, dim, lit, bright), computed in OKLCH: dark is low value, compressed contrast and cold; bright is warm. Band edges use 4×4 ordered (Bayer) dithering. Enemies whose feet are in darkness render as silhouettes showing only their eye glint. |
+| `light_mock_x4.png`, `light_mock_detail_x4.png`, `light_mock_1x.png` | Output at 4× and at native 270×480 |
+
+**Findings (from inspecting the output):**
+1. **"Warm light, cold dark" reads instantly.** Lit, dim and dark states
+   stay distinct at phone scale, and heroes in bright light pick up warm
+   highlights.
+2. **Silhouettes with eye glints make concealment legible.** That gives a
+   clear visual rule for a gameplay state (veiled or untargetable) with no
+   extra UI.
+3. **Light can stay inside a strict palette.** Precomputed variants keep the
+   colour count bounded (base colours × 4) and keep every pixel crisp.
+4. **Bug found and fixed during inspection:** the light accumulator started
+   at 0, so every unlit pixel dithered on the lit/dim threshold. Only the
+   rendered image revealed this, which again shows rendered review is
+   required.
+5. **Still open:** the flagstone is repetitive across the board, so a real
+   tileset needs 3–4 variants plus decals. The dark level may need tuning per
+   environment. Units standing in dim light should get a subtle readability
+   rim so they never sink into the floor.

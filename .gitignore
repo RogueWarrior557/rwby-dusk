@@ -1,12 +1,12 @@
-# Python
-__pycache__/
-*.pyc
 # Build / export output
+# OS / editor
+# Python
+*.pyc
+*.swp
+.DS_Store
+.godot/
 /build/
 /exports/
-.godot/
-node_modules/
+__pycache__/
 dist/
-# OS / editor
-.DS_Store
-*.swp
+node_modules/
