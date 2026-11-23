@@ -5,16 +5,42 @@ exists, what was decided, what is pending, and what to do next. Update it
 at every milestone.
 
 ## Current phase
-**Pre-production: concept approved (Hushlight); narrative direction in
-review.** No game code exists yet.
-* **Art is ON HOLD** at the user's request (2026-11-23: "you can't make any
-  images or art for the game for the time being"). Do not produce artwork
-  until the user lifts this.
-* The user wants official art to be **based on real references** (King
-  God Castle and similar games). Image hosts are blocked in this
-  environment, and a proposed network change was declined. Next time art
-  resumes, get references first (the user supplies images, or approves
-  network access) before drawing anything.
+**Pre-production, art-first stage.** The concept is approved, narrative
+direction is in review, and the **master art directive** is now active. No
+game code exists yet.
+
+### START HERE (next session)
+1. Read `docs/directives/01_master_art_directive.md` (the active
+   instructions, verbatim) and `docs/directives/00_original_brief_summary.md`.
+2. The user moved off the cloud session to work **on their own Windows
+   computer**, in `C:\Users\rogue\Projects\new-project`. If this repo
+   isn't there yet, clone it:
+   `git clone --branch ccr-42ec6447-8f17rv https://github.com/RogueWarrior557/rwby-dusk new-project`.
+   The project files sit at the repo root on that branch.
+3. Do the directive's **"YOUR IMMEDIATE TASK"** list, starting with a real
+   investigation of the local machine: OS, CPU, GPU/VRAM, RAM, disk,
+   installed engines and editors, Python. **None of the directive's tasks
+   have been done yet.** The cloud session was cut off right after
+   unblocking the art plugins.
+4. Art plugins are installed on the user's account: **SpriteCook** (pixel-art
+   generation, MCP `https://mcp.spritecook.ai/mcp/claude`) and **Kling AI**
+   (image generation, MCP `https://kling.ai/mcp/plugin`). Both need the
+   user's sign-in. On a local machine there is no cloud proxy to block them.
+   Check their credits and commercial-use terms before spending.
+5. Official art must be grounded in **real references** (King God Castle and
+   similar games, plus real-world material). The cloud container could not
+   fetch any image host; a local machine can. Keep copyrighted reference
+   images **out of git** (local `references/` folder, gitignored) and commit
+   only a reference index with links, attribution and lessons.
+6. **Get the user's approval** of a visual direction before establishing the
+   official style.
+
+### Art history (for context)
+* The earlier cloud attempts at official art (SVG Maren draft) were made
+  **without references**, and the user rejected that approach. Treat
+  `art/official/maren_vey/` as a discarded exploration, not a candidate.
+* Art was briefly put on hold while the user was on their phone. The master
+  art directive lifts that hold.
 
 ## Repository
 * A standalone git repo with its own history (no shared ancestry with the
@@ -50,6 +76,8 @@ review.** No game code exists yet.
 | Official art style: mostly cartoon, semi-realistic undertones, mood carried by faces | Direction given by the user; production on hold | Must be grounded in references |
 | Maren is hero #1 of 24: a **deployable frontline Captain**, the strongest unit (Wick-born, First Lantern, Naming in Act III); the base object is renamed **the Beacon** | Adopted after user feedback that she felt like a blank canvas | `04_power_system.md` §9 |
 | Engine: Godot 4.7.x + GDScript | **Pending user approval** | See proposal §8.3 |
+| Title | **Under review.** User proposed *Faith in Light* and *Nothing in Faith*. *Nothing in Faith* is intentional: "the Nothing" (the Hush) is what burned memories become, so the faith is literally full of Nothing. Recommended: adopt it, call the Hush "the Nothing" in common speech, make "Faith in Light" the Church's creed and "There is Nothing in faith" the Quiet's reply, and add a store tagline. **Awaiting the user's confirmation.** | Trademark check needed before launch |
+| Cloud Default environment network | Allowed `mcp.spritecook.ai` and `kling.ai` (approved by user) | Only relevant to cloud sessions |
 
 ## Pending user decisions
 * Story review questions in `docs/design/03_story_review.md` §6: Tobin's
@@ -58,6 +86,9 @@ review.** No game code exists yet.
   ending.
 * Still open from the proposal (§9): business model; engine (Godot) and
   permission to download and run its binary; trademark check on the title.
+* Title: confirm *Nothing in Faith* and the lore integration (see Decisions).
+* Visual direction: three directions are to be proposed per the art
+  directive, and need approval.
 
 ## Next steps after approval (M1, technical foundation)
 1. Download and verify the Godot 4.7.x Linux binary headless (needs the

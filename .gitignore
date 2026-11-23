@@ -10,3 +10,5 @@
 __pycache__/
 dist/
 node_modules/
+# copyrighted reference images stay local (index them in docs, never commit)
+/references/
