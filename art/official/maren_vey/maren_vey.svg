@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024">
+  <!--
+    Hushlight official artwork: Maren Vey, Lamplighter of the Greywater Road.
+    Style reference piece (see docs/design/02_official_art_style.md).
+    Layer order: background, back hair, body, neck, face (semi-real lighting),
+    features, front hair, hand and pole, lantern, glow, frame and nameplate.
+    Key light is the lantern at upper left (warm). Fill is cool ambient from
+    the right. Lighting drama is concentrated on the face; costume shading
+    is flat cel (one shadow tone plus a warm rim).
+  -->
+  <defs>
+    <radialGradient id="bgGlow" cx="0.24" cy="0.24" r="0.85">
+      <stop offset="0" stop-color="#6a4a3c"/>
+      <stop offset="0.35" stop-color="#2f2a44"/>
+      <stop offset="1" stop-color="#14121f"/>
+    </radialGradient>
+    <radialGradient id="lanternHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#ff9f45" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff9f45" stop-opacity="0"/>
+    </radialGradient>
+    <!-- face: warm light from upper-left falling to cool shadow at right -->
+    <linearGradient id="skinLight" x1="0.05" y1="0.25" x2="0.95" y2="0.7">
+      <stop offset="0" stop-color="#ffd8b0"/>
+      <stop offset="0.45" stop-color="#eab48f"/>
+      <stop offset="1" stop-color="#b98a86"/>
+    </linearGradient>
+    <linearGradient id="neckGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9a283"/>
+      <stop offset="1" stop-color="#8f6c78"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0" stop-color="#b8603e"/>
+      <stop offset="0.5" stop-color="#7d3b2b"/>
+      <stop offset="1" stop-color="#4b2423"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b5677"/>
+      <stop offset="1" stop-color="#2a3f5c"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa6c4" stop-opacity="0"/>
+      <stop offset="1" stop-color="#9aa6c4" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softer" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="faceClip">
+      <path d="M316 262 C304 290 300 320 304 348 C308 376 322 398 342 414 C358 426 374 430 390 428 C420 424 446 404 462 378 C474 356 480 330 478 302 C476 272 466 248 446 232 C412 208 352 214 316 262 Z"/>
+    </clipPath>
+    <clipPath id="cardClip"><rect x="16" y="16" width="736" height="992" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="768" height="1024" fill="url(#bgGlow)"/>
+  <!-- distant causeway posts with failing beacons -->
+  <g opacity="0.55">
+    <rect x="560" y="520" width="8" height="120" fill="#1b1a2b"/>
+    <circle cx="564" cy="516" r="5" fill="#e8a25a" opacity="0.7"/>
+    <rect x="650" y="540" width="6" height="90" fill="#1b1a2b"/>
+    <circle cx="653" cy="537" r="4" fill="#e8a25a" opacity="0.4"/>
+    <rect x="705" y="552" width="5" height="70" fill="#1b1a2b"/>
+    <path d="M500 640 L768 610 L768 660 L500 690 Z" fill="#1a1828"/>
+  </g>
+  <rect y="560" width="768" height="464" fill="url(#mist)"/>
+  <!-- drifting motes -->
+  <g fill="#ffd9a0">
+    <circle cx="96" cy="420" r="2.2" opacity="0.7"/><circle cx="130" cy="352" r="1.6" opacity="0.5"/>
+    <circle cx="262" cy="120" r="1.8" opacity="0.6"/><circle cx="610" cy="210" r="1.5" opacity="0.35"/>
+    <circle cx="660" cy="330" r="2" opacity="0.3"/><circle cx="84" cy="610" r="1.6" opacity="0.4"/>
+  </g>
+
+  <g id="head-back" transform="translate(0 34)">
+  <!-- ===== BACK HAIR (nape, behind head) ===== -->
+  <path d="M440 236 C478 248 500 284 500 326 C500 360 492 392 474 410 L452 398 C468 370 470 330 462 300 Z"
+        fill="#4b2423" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+
+  </g>
+  <!-- ===== BODY: coat ===== -->
+  <!-- torso silhouette -->
+  <path d="M206 1024 L214 700 C216 620 236 574 282 548 C318 528 352 520 384 520 C420 520 460 528 502 548 C552 572 578 614 584 690 L596 1024 Z"
+        fill="url(#coatGrad)" stroke="#2a1b2e" stroke-width="4" stroke-linejoin="round"/>
+  <!-- cel shadow on the side away from the lantern -->
+  <path d="M470 538 C520 556 562 590 574 650 L584 1024 L470 1024 C486 900 490 780 470 700 Z" fill="#1f2f48"/>
+  <!-- warm rim light on lantern-side shoulder -->
+  <path d="M240 600 C252 572 276 554 308 542 C290 560 270 584 258 616 Z" fill="#c99a72" opacity="0.75"/>
+  <!-- Lamplighter shoulder capelet -->
+  <path d="M258 556 C298 532 348 522 384 522 C420 522 470 532 510 556 C542 576 560 606 566 646 C520 662 468 664 420 656 L384 652 L348 656 C300 664 250 660 210 646 C214 606 230 576 258 556 Z"
+        fill="#22344f" stroke="#2a1b2e" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M470 540 C512 556 548 586 562 640 C540 648 516 652 494 652 C508 612 498 570 470 540 Z" fill="#18253b"/>
+  <path d="M232 600 C244 576 266 558 296 544 C278 566 264 588 254 616 Z" fill="#c99a72" opacity="0.7"/>
+  <path d="M214 640 C254 654 304 658 348 652 M420 652 C466 658 516 656 560 642" fill="none" stroke="#b4823e" stroke-width="2.5"/>
+  <!-- high collar, open at throat -->
+  <path d="M300 540 C312 500 336 478 356 470 L364 532 C340 540 318 546 300 540 Z"
+        fill="#34506f" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M470 540 C460 502 438 480 418 472 L410 532 C432 540 452 546 470 540 Z"
+        fill="#24364f" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- coat front opening line and lapel -->
+  <path d="M388 600 C392 700 396 860 400 1024" fill="none" stroke="#1b263a" stroke-width="3"/>
+  <path d="M352 560 C362 610 376 640 388 650" fill="none" stroke="#2a1b2e" stroke-width="2.5"/>
+  <!-- mismatched buttons -->
+  <g stroke="#2a1b2e" stroke-width="2">
+    <circle cx="410" cy="700" r="9" fill="#d8a64a"/><circle cx="407" cy="697" r="3" fill="#ffe6a0" stroke="none"/>
+    <circle cx="414" cy="790" r="9" fill="#8a6a3a"/>
+    <circle cx="418" cy="880" r="8" fill="#e8dcc0"/><circle cx="415" cy="878" r="2" fill="#2a1b2e" stroke="none"/><circle cx="421" cy="882" r="2" fill="#2a1b2e" stroke="none"/>
+  </g>
+  <!-- Order badge (lantern sigil) on chest -->
+  <g transform="translate(480 640)">
+    <path d="M0 -18 L12 -6 L12 14 L-12 14 L-12 -6 Z" fill="#d8a64a" stroke="#2a1b2e" stroke-width="2"/>
+    <path d="M0 -6 C5 0 5 6 0 10 C-5 6 -5 0 0 -6 Z" fill="#fff0b8"/>
+  </g>
+
+  <!-- ===== SCARF: faded ferry-town knitwork ===== -->
+  <path d="M322 520 C340 500 370 494 398 496 C430 498 456 508 470 526 C462 552 432 566 398 568 C364 570 334 556 322 520 Z"
+        fill="#e4d4b4" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M332 528 C360 540 430 544 462 530" fill="none" stroke="#a5482f" stroke-width="7"/>
+  <path d="M338 544 C368 556 424 558 452 546" fill="none" stroke="#3d7a78" stroke-width="5"/>
+  <!-- hanging scarf end -->
+  <path d="M436 556 C444 600 446 650 440 700 L404 706 C410 660 410 610 404 566 Z"
+        fill="#d9c8a6" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M408 610 L442 606 M407 640 L443 638" stroke="#a5482f" stroke-width="6"/>
+  <path d="M406 664 L442 664" stroke="#3d7a78" stroke-width="4"/>
+  <path d="M404 706 L408 720 M416 706 L418 722 M428 704 L430 720 M440 700 L442 716" stroke="#c8b48e" stroke-width="3" stroke-linecap="round"/>
+  <!-- scarf shadow side -->
+  <path d="M440 512 C458 516 468 524 470 530 C462 552 440 562 420 566 C440 550 448 530 440 512 Z" fill="#a89a86" opacity="0.8"/>
+
+  <!-- ===== NECK ===== -->
+  <path d="M350 440 C350 462 348 486 342 508 L424 510 C418 488 416 464 418 444 Z" fill="url(#neckGrad)" stroke="#2a1b2e" stroke-width="3"/>
+  <path d="M396 450 C406 466 414 486 418 508 L424 510 C418 484 416 464 418 444 Z" fill="#7d5d6c" opacity="0.7"/>
+  <path d="M356 452 C372 462 396 464 416 456 L417 470 C398 476 372 474 354 466 Z" fill="#8a6470" opacity="0.55"/>
+
+  <g id="head" transform="translate(0 34)">
+  <!-- ===== FACE ===== -->
+  <path d="M316 262 C304 290 300 320 304 348 C308 376 322 398 342 414 C358 426 374 430 390 428 C420 424 446 404 462 378 C474 356 480 330 478 302 C476 272 466 248 446 232 C412 208 352 214 316 262 Z"
+        fill="url(#skinLight)"/>
+  <g clip-path="url(#faceClip)">
+    <!-- cool form shadow on the far-from-lantern side (soft edge = semi-real undertone) -->
+    <filter id="soft3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <path d="M432 236 C450 270 454 314 448 350 C440 386 420 412 392 430 L500 440 L500 220 Z" fill="#a07a86" opacity="0.55" filter="url(#soft3)"/>
+    <!-- core shadow under cheekbone -->
+    <path d="M410 356 C424 366 434 382 436 398 C424 390 414 374 410 356 Z" fill="#8a6676" opacity="0.35" filter="url(#soft)"/>
+    <!-- warm bounce on lit cheek -->
+    <ellipse cx="330" cy="372" rx="26" ry="18" fill="#ff9f7a" opacity="0.35" filter="url(#soft)"/>
+    <ellipse cx="420" cy="372" rx="16" ry="9" fill="#e08a86" opacity="0.22" filter="url(#soft)"/>
+    <!-- brow-ridge and eye-socket shading -->
+    <path d="M308 300 C330 292 360 294 376 302 C356 300 330 302 308 312 Z" fill="#a8707a" opacity="0.35" filter="url(#soft)"/>
+    <path d="M384 302 C404 294 430 296 450 304 C430 304 404 306 386 312 Z" fill="#8a5f72" opacity="0.45" filter="url(#soft)"/>
+    <!-- jaw shadow -->
+    <path d="M332 404 C356 424 392 428 428 408 C408 434 360 438 332 404 Z" fill="#8e6876" opacity="0.35" filter="url(#soft)"/>
+    <!-- lantern rim highlight on the lit edge of the face -->
+    <path d="M316 262 C304 290 300 320 304 348 C306 362 310 374 316 384 C312 352 312 318 324 286 Z" fill="#fff0cf" opacity="0.85"/>
+    <!-- burn scar on left jaw (viewer right, shadow side) -->
+    <path d="M442 380 C448 386 450 394 448 402" fill="none" stroke="#c88a8c" stroke-width="3" stroke-linecap="round"/>
+    <path d="M443 381 C448 387 449 393 447 400" fill="none" stroke="#f0c0b4" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <!-- face outline (heavier on the shadow side, lighter on the lit side) -->
+  <path d="M316 262 C304 290 300 320 304 348 C308 376 322 398 342 414 C358 426 374 430 390 428 C420 424 446 404 462 378 C474 356 480 330 478 302"
+        fill="none" stroke="#2a1b2e" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M316 262 C304 290 300 320 304 348 C306 364 312 380 320 392" fill="none" stroke="#5a3a3e" stroke-width="2"/>
+
+  <!-- ear (near side) -->
+  <path d="M470 318 C486 312 496 326 492 346 C488 366 476 374 466 370" fill="#c4928c" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M474 330 C482 330 484 342 478 354" fill="none" stroke="#8a5f6c" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- ===== FEATURES (expression: steady resolve, one corner lifted) ===== -->
+  <path d="M310 298 C322 287 344 284 366 291 L364 297 C344 292 326 295 312 304 Z" fill="#4b2423" stroke="#2a1b2e" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M386 291 C406 282 434 284 454 295 L452 301 C432 293 408 293 388 299 Z" fill="#4b2423" stroke="#2a1b2e" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- far eye -->
+  <path d="M314 324 C326 309 350 308 366 320 C354 333 328 336 314 324 Z" fill="#f6ead6"/>
+  <path d="M314 324 C326 309 350 308 366 320 C352 316 330 316 314 324 Z" fill="#c8a8a0" opacity="0.55"/>
+  <ellipse cx="342" cy="322" rx="10.5" ry="11" fill="#8a5a2b"/>
+  <ellipse cx="342" cy="325" rx="10.5" ry="8" fill="#5e3a1e" opacity="0.45"/>
+  <ellipse cx="342" cy="322" rx="10.5" ry="11" fill="none" stroke="#3a2416" stroke-width="1.6"/>
+  <circle cx="342.5" cy="322.5" r="4.8" fill="#1d1018"/>
+  <circle cx="338" cy="318" r="3" fill="#fff4d0"/>
+  <circle cx="346" cy="327" r="1.1" fill="#ffd9a0" opacity="0.8"/>
+  <path d="M312 325 C326 307 352 305 368 318" fill="none" stroke="#2a1b2e" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M313 323 L306 321 M316 317 L310 313" stroke="#2a1b2e" stroke-width="2" stroke-linecap="round"/>
+  <path d="M318 331 C330 337 350 336 362 326" fill="none" stroke="#7a4a4a" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M318 312 C330 304 350 303 362 309" fill="none" stroke="#b07a72" stroke-width="1.3" stroke-linecap="round" opacity="0.8"/>
+  <!-- near eye -->
+  <path d="M384 324 C400 306 432 305 452 320 C438 336 402 339 384 324 Z" fill="#efe0d0"/>
+  <path d="M384 324 C400 306 432 305 452 320 C434 315 404 315 384 324 Z" fill="#b89aa0" opacity="0.6"/>
+  <ellipse cx="417" cy="322" rx="13" ry="13.5" fill="#8a5a2b"/>
+  <ellipse cx="417" cy="326" rx="13" ry="9.5" fill="#5e3a1e" opacity="0.45"/>
+  <ellipse cx="417" cy="322" rx="13" ry="13.5" fill="none" stroke="#3a2416" stroke-width="1.8"/>
+  <circle cx="417.5" cy="322.5" r="6" fill="#1d1018"/>
+  <circle cx="411.5" cy="317" r="3.6" fill="#fff4d0"/>
+  <circle cx="422" cy="328.5" r="1.4" fill="#ffd9a0" opacity="0.8"/>
+  <path d="M381 325 C398 304 432 302 455 317" fill="none" stroke="#2a1b2e" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M452 317 L459 312 M447 311 L452 304 M455 321 L462 320" stroke="#2a1b2e" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M389 332 C404 340 428 340 444 329" fill="none" stroke="#7a4a4a" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M390 311 C406 301 430 300 446 308" fill="none" stroke="#9a6a6a" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+  <!-- nose -->
+  <path d="M362 334 C360 350 355 362 350 372 C357 377 367 378 375 375" fill="none" stroke="#7a4a4a" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M369 338 C373 352 378 364 378 372 C371 375 365 375 360 373 C367 362 369 350 369 338 Z" fill="#a06a74" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="353" cy="364" r="2.8" fill="#fff0d8" opacity="0.8"/>
+  <!-- mouth: level and firm, near corner faintly lifted -->
+  <path d="M348 399 C358 393 372 393 386 396 C392 397 397 395 400 393 C392 400 362 402 348 399 Z" fill="#c07a78" opacity="0.7"/>
+  <path d="M346 400 C358 397 374 397 388 398 C394 398 398 396 401 393" fill="none" stroke="#5a2a32" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M354 406 C364 411 378 411 388 406" fill="none" stroke="#b46a6a" stroke-width="3.2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M360 408 C366 409.5 374 409.5 380 408" fill="none" stroke="#ffd6c0" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M344 400 L341 402" stroke="#5a2a32" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- ===== FRONT HAIR: short, self-cut, side-swept toward the lantern ===== -->
+  <path d="M304 306 C292 262 306 220 344 200 C384 180 440 186 470 214 C490 234 498 264 492 298
+           C486 290 480 282 472 278 L474 302 C466 286 456 272 446 264 C442 278 434 286 424 290
+           C424 272 418 258 408 250 C396 264 380 274 360 278 C366 264 368 254 364 246
+           C348 254 334 266 324 282 C322 272 322 264 324 258 C314 270 308 288 304 306 Z"
+        fill="url(#hairGrad)" stroke="#2a1b2e" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M318 242 C332 214 360 200 392 196 C364 210 344 226 334 252 Z" fill="#e0884f" opacity="0.9"/>
+  <path d="M310 290 C310 272 316 262 324 258 C318 270 314 282 312 298 Z" fill="#f0a060" opacity="0.85"/>
+  <path d="M368 248 C382 242 396 244 406 252 C394 250 382 250 370 254 Z" fill="#c8703f" opacity="0.8"/>
+  <path d="M378 204 C400 214 414 230 420 252 M424 208 C444 222 456 242 460 264 M350 214 C362 226 368 238 368 246 M446 214 C462 230 472 252 474 276" fill="none" stroke="#4b2423" stroke-width="2" stroke-linecap="round"/>
+  <path d="M472 268 C488 286 494 310 486 334 C480 318 474 302 466 292 Z" fill="#5a2c25" stroke="#2a1b2e" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M362 270 C358 284 352 296 344 304 C356 298 366 288 372 274 Z" fill="#7d3b2b" stroke="#2a1b2e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M422 284 C428 296 430 306 427 316 C436 306 437 294 432 282 Z" fill="#6a3127" stroke="#2a1b2e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M332 270 C328 282 326 292 328 300 C334 290 338 280 338 268 Z" fill="#b8603e" stroke="#2a1b2e" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <!-- ===== RIGHT ARM, GLOVED HAND AND POLE ===== -->
+  <!-- pole (behind hand) -->
+  <rect x="166" y="190" width="14" height="834" fill="#4a3426" stroke="#2a1b2e" stroke-width="3"/>
+  <rect x="168" y="190" width="4" height="834" fill="#7a5a3e"/>
+  <!-- iron hook at the top -->
+  <path d="M173 196 C173 150 200 128 228 136 C250 142 256 164 246 178" fill="none" stroke="#2a1b2e" stroke-width="11" stroke-linecap="round"/>
+  <path d="M173 196 C173 150 200 128 228 136 C250 142 256 164 246 178" fill="none" stroke="#55505e" stroke-width="5" stroke-linecap="round"/>
+  <!-- short sleeve segment emerging from under the capelet -->
+  <path d="M212 638 C224 648 244 652 258 648 C252 660 242 668 228 670 L198 666 C202 656 206 646 212 638 Z" fill="#2f4866" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- cuff at the wrist -->
+  <path d="M198 664 L228 668 L226 702 L196 700 Z" fill="#22344c" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- gloved hand gripping the pole: back of hand, four wrapped fingers, thumb -->
+  <path d="M178 626 C194 616 214 622 220 640 C226 660 222 682 206 692 C194 698 182 696 174 690 Z" fill="#5a3b2a" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M200 630 C212 640 216 660 210 682" fill="none" stroke="#7a5640" stroke-width="2.2" stroke-linecap="round"/>
+  <g stroke="#2a1b2e" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M188 632 L162 632 L162 647 L188 647 Z" fill="#5a3b2a"/>
+    <path d="M164 632 L158 632 C150 632 146 636 146 639.5 C146 643 150 647 158 647 L164 647 Z" fill="#e6b08e"/>
+    <path d="M188 647 L160 647 L160 662 L188 662 Z" fill="#53372a"/>
+    <path d="M162 647 L156 647 C148 647 144 651 144 654.5 C144 658 148 662 156 662 L162 662 Z" fill="#dda686"/>
+    <path d="M188 662 L162 662 L162 677 L188 677 Z" fill="#4e3427"/>
+    <path d="M164 662 L158 662 C150 662 146 666 146 669.5 C146 673 150 677 158 677 L164 677 Z" fill="#d49e80"/>
+    <path d="M186 677 L166 677 L168 690 L186 690 Z" fill="#4a3125"/>
+    <path d="M168 677 L162 677 C155 677 152 680 152 683.5 C152 687 155 690 162 690 L168 690 Z" fill="#cc977a"/>
+    <path d="M208 628 C198 618 178 618 170 626 C168 632 174 636 182 634 C192 632 200 634 208 640 Z" fill="#634232"/>
+  </g>
+  <path d="M150 637 C152 635 156 634 158 635" stroke="#fff0d8" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- ===== THE OLD LANTERN ===== -->
+  <ellipse cx="246" cy="262" rx="170" ry="170" fill="url(#lanternHalo)"/>
+  <!-- chain -->
+  <path d="M246 178 L246 198" stroke="#2a1b2e" stroke-width="5"/>
+  <circle cx="246" cy="184" r="4" fill="none" stroke="#6a6470" stroke-width="2"/>
+  <!-- cap -->
+  <path d="M214 214 L246 196 L278 214 Z" fill="#3a3340" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="210" y="212" width="72" height="10" rx="3" fill="#b4823e" stroke="#2a1b2e" stroke-width="3"/>
+  <!-- glass body -->
+  <path d="M216 222 L276 222 L282 300 L210 300 Z" fill="#ffcf74" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M222 226 L270 226 L274 296 L218 296 Z" fill="#ffe7a8"/>
+  <!-- flame -->
+  <path d="M246 236 C258 252 262 268 256 282 C252 290 240 290 236 282 C230 268 236 252 246 236 Z" fill="#ff9a3c"/>
+  <path d="M246 252 C252 262 254 272 250 280 C247 284 243 284 241 280 C238 272 240 262 246 252 Z" fill="#fff6d8"/>
+  <!-- frame bars and soot -->
+  <path d="M246 222 L246 300 M216 258 L278 258" stroke="#2a1b2e" stroke-width="3"/>
+  <path d="M276 228 L282 300 L272 300 Z" fill="#3a2a2a" opacity="0.35"/>
+  <rect x="206" y="298" width="80" height="12" rx="3" fill="#b4823e" stroke="#2a1b2e" stroke-width="3"/>
+  <path d="M232 310 L260 310 L254 326 L238 326 Z" fill="#3a3340" stroke="#2a1b2e" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="226" cy="236" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- warm light spill over the scene (screen-like veil) -->
+  <ellipse cx="300" cy="320" rx="230" ry="200" fill="#ffb060" opacity="0.08" filter="url(#softer)"/>
+  </g>
+
+  <!-- ===== FRAME AND NAMEPLATE ===== -->
+  <rect x="16" y="16" width="736" height="992" rx="10" fill="none" stroke="#b4823e" stroke-width="4"/>
+  <rect x="26" y="26" width="716" height="972" rx="6" fill="none" stroke="#5e4630" stroke-width="1.5"/>
+  <path d="M16 870 L752 870 L752 1008 L16 1008 Z" fill="#14121f" opacity="0.86"/>
+  <path d="M40 872 L728 872" stroke="#b4823e" stroke-width="2"/>
+  <text x="48" y="928" fill="#f3e2c0" font-family="Caladea, 'Bitstream Charter', serif" font-size="46" letter-spacing="2">MAREN VEY</text>
+  <text x="50" y="964" fill="#c9a874" font-family="Caladea, 'Bitstream Charter', serif" font-size="21" font-style="italic">Lamplighter of the Greywater Road</text>
+  <text x="720" y="964" fill="#8d7a9c" font-family="Inter, sans-serif" font-size="15" text-anchor="end" letter-spacing="3">COMMANDER · ORDER</text>
+</svg>
